@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { logIn, register } from './operations';
+import { logIn, logOut, register } from './operations';
 
 const initialState = {
   user: { name: null, email: null },
@@ -26,7 +26,14 @@ const authSlice = createSlice({
         state.token = action.payload.token;
         state.isLoggedIn = true;
       })
-      .addCase(logIn.rejected, (state, action) => state),
+      .addCase(logIn.rejected, (state, action) => state)
+      .addCase(logOut.pending, (state, action) => state)
+      .addCase(logOut.fulfilled, state => {
+        state.user = { name: null, email: null };
+        state.token = null;
+        state.isLoggedIn = false;
+      })
+      .addCase(logOut.rejected, (state, action) => state),
 });
 
 export const authReducer = authSlice.reducer;
