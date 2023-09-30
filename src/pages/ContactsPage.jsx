@@ -1,10 +1,10 @@
-const { ContactForm } = require('components/ContactForm/ContactForm');
-const { ContactList } = require('components/ContactList/ContactList');
-const { Filter } = require('components/Filter/Filter');
-const { useEffect } = require('react');
-const { useDispatch, useSelector } = require('react-redux');
-const { fetchContacts } = require('redux/contacts/operations');
-const { selectIsLoading, selectError } = require('redux/contacts/selectors');
+import { ContactForm } from 'components/ContactForm/ContactForm';
+import { ContactList } from 'components/ContactList/ContactList';
+import { Filter } from 'components/Filter/Filter';
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchContacts } from 'redux/contacts/operations';
+import { selectIsLoading, selectError } from 'redux/contacts/selectors';
 
 const ContactsPage = () => {
   const dispatch = useDispatch();
