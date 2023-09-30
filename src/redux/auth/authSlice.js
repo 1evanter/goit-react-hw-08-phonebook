@@ -1,4 +1,4 @@
-const { createSlice } = require('@reduxjs/toolkit');
+import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   user: { name: null, email: null },
@@ -9,8 +9,8 @@ const initialState = {
 
 const authSlice = createSlice({
   name: 'auth',
-    initialState,
-  extraReducers:
+  initialState,
+  extraReducers: builder => builder.addCase(),
 });
 
 export const authReducer = authSlice.reducer;
