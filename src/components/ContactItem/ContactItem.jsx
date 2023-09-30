@@ -1,8 +1,8 @@
 import { Item } from './ContactItem.styled';
 import { Button } from 'components/ContactForm/ContactForm.styled';
 import { useDispatch, useSelector } from 'react-redux';
-import { deleteContact } from 'redux/operations';
-import { selectFilteredContacts } from 'redux/selectors';
+import { deleteContact } from 'redux/contacts/operations';
+import { selectFilteredContacts } from 'redux/contacts/selectors';
 
 export const ContactItem = () => {
   const dispatch = useDispatch();
