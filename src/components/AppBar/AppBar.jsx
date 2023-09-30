@@ -5,6 +5,8 @@ export const AppBar = () => (
     <nav>
       <NavLink to="/">Home</NavLink>
       <NavLink to="/contacts">Contacts</NavLink>
+      <NavLink to="/register">Register</NavLink>
+      <NavLink to="/login">Login</NavLink>
     </nav>
   </header>
 );
