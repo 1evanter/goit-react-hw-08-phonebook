@@ -8,10 +8,10 @@ export const ContactItem = () => {
   const dispatch = useDispatch();
   const filteredContacts = useSelector(selectFilteredContacts);
 
-  return filteredContacts.map(({ name, phone, id }) => {
+  return filteredContacts.map(({ name, number, id }) => {
     return (
       <Item key={id}>
-        {name}: {phone}
+        {name}: {number}
         <Button onClick={() => dispatch(deleteContact(id))} type="button">
           Delete
         </Button>
