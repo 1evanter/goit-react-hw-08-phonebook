@@ -8,6 +8,7 @@ import { fetchContacts } from 'redux/contacts/operations';
 import { selectIsLoading, selectError } from 'redux/contacts/selectors';
 import { Route, Routes } from 'react-router-dom';
 import { Layout } from './Layout';
+import Home from 'pages/Home';
 
 export const App = () => {
   const dispatch = useDispatch();
@@ -21,6 +22,8 @@ export const App = () => {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+
         <div style={{ margin: '30px' }}>
           <h1>Phonebook</h1>
           <ContactForm />
