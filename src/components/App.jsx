@@ -6,6 +6,8 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchContacts } from 'redux/contacts/operations';
 import { selectIsLoading, selectError } from 'redux/contacts/selectors';
+import { Route, Routes } from 'react-router-dom';
+import { Layout } from './Layout';
 
 export const App = () => {
   const dispatch = useDispatch();
@@ -17,14 +19,18 @@ export const App = () => {
   }, [dispatch]);
 
   return (
-    <div style={{ margin: '30px' }}>
-      <h1>Phonebook</h1>
-      <ContactForm />
-      <h2 style={{ marginBottom: '10px' }}>Contacts</h2>
-      <Filter />
-      {isLoading && !error && <b>Request in progress...</b>}
-      <ContactList />
-      <GlobalStyle />
-    </div>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <div style={{ margin: '30px' }}>
+          <h1>Phonebook</h1>
+          <ContactForm />
+          <h2 style={{ marginBottom: '10px' }}>Contacts</h2>
+          <Filter />
+          {isLoading && !error && <b>Request in progress...</b>}
+          <ContactList />
+          <GlobalStyle />
+        </div>
+      </Route>
+    </Routes>
   );
 };
