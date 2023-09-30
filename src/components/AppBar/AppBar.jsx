@@ -1,12 +1,11 @@
-import { NavLink } from 'react-router-dom';
+import { Navigation } from 'components/Navigation/Navigation';
+import { AuthNav } from '../AuthNav/AuthNav';
 
-export const AppBar = () => (
-  <header>
-    <nav>
-      <NavLink to="/">Home</NavLink>
-      <NavLink to="/contacts">Contacts</NavLink>
-      <NavLink to="/register">Register</NavLink>
-      <NavLink to="/login">Login</NavLink>
-    </nav>
-  </header>
-);
+export const AppBar = () => {
+  return (
+    <header>
+      <Navigation />
+      <AuthNav />
+    </header>
+  );
+};
