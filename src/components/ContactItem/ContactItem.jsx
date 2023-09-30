@@ -1,5 +1,4 @@
 import { Item } from './ContactItem.styled';
-import { Button } from 'components/ContactForm/ContactForm.styled';
 import { useDispatch, useSelector } from 'react-redux';
 import { deleteContact } from 'redux/contacts/operations';
 import { selectFilteredContacts } from 'redux/contacts/selectors';
@@ -12,9 +11,9 @@ export const ContactItem = () => {
     return (
       <Item key={id}>
         {name}: {number}
-        <Button onClick={() => dispatch(deleteContact(id))} type="button">
+        <button onClick={() => dispatch(deleteContact(id))} type="button">
           Delete
-        </Button>
+        </button>
       </Item>
     );
   });

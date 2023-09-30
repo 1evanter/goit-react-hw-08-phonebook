@@ -36,23 +36,5 @@ export const StyledField = styled(Field)`
 `;
 
 export const Button = styled.button`
-  min-width: 80px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-
-  color: #fff;
-  background-color: #27374d;
-  border: 2px solid #27374d;
-  border-radius: 3px;
-
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-    border: 2px solid #526d82;
-    background-color: #dde6ed;
-    color: #27374d;
-  }
+  min-width: 192px;
 `;

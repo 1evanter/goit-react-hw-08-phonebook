@@ -1,5 +1,5 @@
 import { Formik } from 'formik';
-import { StyledForm, StyledField, Button, Label } from './ContactForm.styled';
+import { StyledForm, StyledField, Label, Button } from './ContactForm.styled';
 import { nanoid } from 'nanoid';
 import { useDispatch, useSelector } from 'react-redux';
 import { addContact } from 'redux/contacts/operations';
