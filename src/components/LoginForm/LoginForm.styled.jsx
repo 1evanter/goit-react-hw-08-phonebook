@@ -4,33 +4,53 @@ export const Form = styled.form`
   width: 320px;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin: 30px auto;
   padding: 15px;
   gap: 15px;
-  align-items: center;
   border: 3px dashed #526d82;
 `;
 
 export const Label = styled.label`
   display: flex;
   flex-direction: column;
-  margin-bottom: 16px;
 `;
 
 export const Input = styled.input`
   margin-top: 3px;
-  border: 1px solid #526d82;
+  padding: 4px;
+
+  border: 2px solid #9db2bf;
   border-radius: 3px;
   outline: none;
-  padding: 4px;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border: 2px solid #27374d;
+  }
 `;
 
 export const Button = styled.button`
-  color: #27374d;
-  background-color: #dde6ed;
-  border: 1px solid #526d82;
+  display: block;
+  color: #fff;
+  background-color: #27374d;
+  border: 2px solid #27374d;
   border-radius: 3px;
-  padding: 3px;
-  min-width: 80px;
+  padding: 5px 75px;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border: 2px solid #526d82;
+    background-color: #dde6ed;
+    color: #27374d;
+  }
 `;
