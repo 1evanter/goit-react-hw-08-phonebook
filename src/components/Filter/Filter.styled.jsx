@@ -1,14 +1,16 @@
 import styled from 'styled-components';
 
 export const Form = styled.form`
-  max-width: 300px;
+  max-width: 320px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
   margin-top: 15px;
   margin-bottom: 15px;
   padding: 15px;
   gap: 15px;
-  align-items: center;
 `;
 
 export const Label = styled.label`
@@ -21,8 +23,15 @@ export const Input = styled.input`
   display: flex;
   flex-direction: column;
   margin-top: 3px;
-  border: 1px solid #526d82;
+  border: 2px solid #9db2bf;
   border-radius: 3px;
   outline: none;
   padding: 4px;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border: 2px solid #27374d;
+  }
 `;
