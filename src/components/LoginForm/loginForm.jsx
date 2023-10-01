@@ -8,8 +8,8 @@ import {
   Section,
   Title,
   Text,
+  StyledLink,
 } from './LoginForm.styled';
-import { Link } from 'react-router-dom';
 
 export const LoginForm = () => {
   const dispatch = useDispatch();
@@ -42,7 +42,7 @@ export const LoginForm = () => {
         </Label>
         <Text>
           <p>Don't have an account?</p>
-          <Link to="/register">Register</Link>
+          <StyledLink to="/register">Register</StyledLink>
         </Text>
         <Button type="submit">Login</Button>
       </Form>

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Section = styled.section`
@@ -48,7 +49,12 @@ export const Button = styled.button`
 `;
 
 export const Text = styled.div`
-  display: inline;
+  display: flex;
+  gap: 8px;
   font-size: 12px;
   font-weight: 400;
+`;
+
+export const StyledLink = styled(Link)`
+  color: #27374d;
 `;
