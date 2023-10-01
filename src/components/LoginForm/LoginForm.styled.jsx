@@ -1,17 +1,26 @@
 import styled from 'styled-components';
 
+export const Section = styled.section`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  // align-items: center;
+  margin: 80px auto 0;
+  padding: 15px;
+  height: 400px;
+`;
+
+export const Title = styled.h2`
+  margin-top: 30px;
+`;
+
 export const Form = styled.form`
-  width: 320px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-
-  margin: 30px auto;
-  padding: 15px;
+  // justify-content: center;
   gap: 15px;
-  border: 3px dashed #526d82;
 `;
 
 export const Label = styled.label`
