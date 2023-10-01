@@ -1,11 +1,10 @@
 import { HomeContent } from 'components/HomeContent/HomeContent';
-import { Wrapper } from 'components/HomeContent/HomeContent.styled';
 
 const HomePage = () => {
   return (
-    <Wrapper>
+    <div>
       <HomeContent />
-    </Wrapper>
+    </div>
   );
 };
 
