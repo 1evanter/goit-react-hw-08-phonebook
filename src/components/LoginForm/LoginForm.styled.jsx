@@ -39,7 +39,7 @@ export const Input = styled.input`
 
   &:hover,
   &:focus {
-    border: 2px solid #27374d;
+    border: 2px solid #526d82;
   }
 `;
 
