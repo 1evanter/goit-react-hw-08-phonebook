@@ -31,8 +31,8 @@ a {
 button {
   cursor: pointer;
    min-width: 80px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 
   color: #fff;
   background-color: #526d82;
