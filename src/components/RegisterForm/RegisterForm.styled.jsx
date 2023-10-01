@@ -30,7 +30,7 @@ export const Label = styled.label`
 
 export const Input = styled.input`
   margin-top: 3px;
-  padding: 4px;
+  padding: 6px 10px;
 
   border: 2px solid #9db2bf;
   border-radius: 3px;
@@ -45,5 +45,5 @@ export const Input = styled.input`
 `;
 
 export const Button = styled.button`
-  min-width: 192px;
+  width: 200px;
 `;

@@ -1,6 +1,15 @@
 import { useDispatch } from 'react-redux';
 import { logIn } from 'redux/auth/operations';
-import { Form, Label, Input, Button, Section, Title } from './LoginForm.styled';
+import {
+  Form,
+  Label,
+  Input,
+  Button,
+  Section,
+  Title,
+  Text,
+} from './LoginForm.styled';
+import { Link } from 'react-router-dom';
 
 export const LoginForm = () => {
   const dispatch = useDispatch();
@@ -31,6 +40,10 @@ export const LoginForm = () => {
           Password
           <Input type="password" name="password" />
         </Label>
+        <Text>
+          <p>Don't have an account?</p>
+          <Link to="/register">Register</Link>
+        </Text>
         <Button type="submit">Login</Button>
       </Form>
     </Section>

@@ -26,7 +26,8 @@ export const Input = styled.input`
   border: 2px solid #9db2bf;
   border-radius: 3px;
   outline: none;
-  padding: 4px;
+  padding: 6px 10px;
+  font-size: 16px;
 
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
