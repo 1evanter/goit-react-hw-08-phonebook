@@ -23,8 +23,8 @@ const ContactsPage = () => {
         <ContactForm />
         <Section>
           <Filter />
-          {isLoading && !error && <b>Request in progress...</b>}
           <ContactList />
+          {isLoading && !error && <b>Request in progress...</b>}
         </Section>
       </Container>
     </Wrapper>
