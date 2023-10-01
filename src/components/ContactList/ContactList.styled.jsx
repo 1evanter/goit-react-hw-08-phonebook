@@ -7,5 +7,4 @@ export const List = styled.ul`
   justify-content: center;
   gap: 10px;
   width: 320px;
-  margin-top: 15px;
 `;
