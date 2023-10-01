@@ -16,7 +16,7 @@ export const Container = styled.div`
 export const Title = styled.h2`
   display: block;
   margin: 30px auto 50px;
-  font-size: 50px;
+  font-size: 46px;
 `;
 
 export const Section = styled.section`
