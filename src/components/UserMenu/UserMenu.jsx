@@ -11,7 +11,7 @@ export const UserMenu = () => {
     <Wrapper>
       <UserName>Welcome, {user.name}</UserName>
       <button type="button" onClick={() => dispatch(logOut())}>
-        Logout
+        Log out
       </button>
     </Wrapper>
   );
