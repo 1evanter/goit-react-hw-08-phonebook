@@ -4,11 +4,9 @@ export const Section = styled.section`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  // align-items: center;
   margin: 80px auto 0;
   padding: 30px 15px;
   height: 450px;
-  // gap: 30px;
 `;
 
 export const Title = styled.h2`
