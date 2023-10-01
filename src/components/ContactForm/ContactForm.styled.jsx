@@ -3,10 +3,10 @@ import { Form, Field } from 'formik';
 
 export const StyledForm = styled(Form)`
   max-width: 300px;
+  max-height: 200px;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  justify-content: center;
   padding: 15px;
   gap: 15px;
   align-items: center;
