@@ -4,9 +4,8 @@ export const Section = styled.section`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  // align-items: center;
   margin: 80px auto 0;
-  padding: 15px;
+  padding: 30px 15px;
   height: 400px;
 `;
 
@@ -19,7 +18,6 @@ export const Form = styled.form`
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  // justify-content: center;
   gap: 15px;
 `;
 

@@ -21,7 +21,7 @@ export const LoginForm = () => {
 
   return (
     <Section>
-      <Title>Login to your account</Title>
+      <Title>Log in to your account</Title>
       <Form onSubmit={handleSubmit} autoComplete="off">
         <Label>
           Email
