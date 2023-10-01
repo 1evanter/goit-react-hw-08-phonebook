@@ -2,12 +2,12 @@ import styled from 'styled-components';
 import { Form, Field } from 'formik';
 
 export const StyledForm = styled(Form)`
-  max-width: 300px;
-  max-height: 200px;
+  width: 300px;
+  height: 330px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 15px;
+  padding: 65px 15px;
   gap: 15px;
   align-items: center;
   border: 3px dashed #526d82;
